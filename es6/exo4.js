@@ -11,7 +11,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+checkVehicles = (_array, str) => {
+  const coucou = _array.includes(str);
+  console.log(coucou);
+}
 /*
   Test 1
   Résultat attendu : true

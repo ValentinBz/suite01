@@ -10,6 +10,9 @@
 */
 
 //  écrire votre code sous ce commentaire
+findYellowFruit = (_array) => {
+ _array.find(x => { if((x.color) == "jaune"){console.log("fruit :" ,x.name);}})
+}
 
 /*
   Test 1
@@ -25,6 +28,14 @@ findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'banane', color: 'jau
 
 findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'pomme', color: 'vert'}]);
 
+const inventaire = [
+                     {nom: 'pommes', quantité: 2},
+                     {nom: 'bananes', quantité: 0},
+                     {nom: 'cerises', quantité: 5}
+                   ];
+
+const resultat = inventaire.find( fruit => fruit.nom === 'cerises');
+console.log(resultat);
 /* DO NOT TOUCH */
 module.exports = {
   findYellowFruit: findYellowFruit

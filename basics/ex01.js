@@ -21,5 +21,5 @@
 function returnParameter(nb) {
     return nb;
 }
-
+console.log(returnParameter(5));
 //  écrire votre code sous ce commentaire

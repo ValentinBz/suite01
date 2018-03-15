@@ -12,6 +12,9 @@
 */
 
 //  écrire votre code sous ce commentaire
+addition = (x,y) => { 
+    return x + y 
+}
 
 /*
   Test 1

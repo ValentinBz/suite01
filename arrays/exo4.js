@@ -10,7 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+searchOcc = (arr, occ) => {
+    const fin = arr.map(x => x == occ);
+    console.log(fin);
+}
 /*
   Test 1
   Résultat attendu : 2

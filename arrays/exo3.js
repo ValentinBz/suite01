@@ -7,7 +7,11 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+editStringAt = (str, pos, char) => {
+  arr = Array.from(str);
+  arr[pos] = char;
+  console.log(arr.join(""));
+}
 /*
   Test 1
   Résultat attendu : "Bondour"

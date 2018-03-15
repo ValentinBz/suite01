@@ -8,7 +8,12 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+isEvenConcat = x => {
+    if ((x%2) != 0) {
+        console.log(`${x} est impair`);
+    }
+    else console.log(`${x} est pair`);;
+}
 /*
   Test 1
   Résultat attendu : "6 est pair"

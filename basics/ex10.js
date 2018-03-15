@@ -12,6 +12,38 @@
 */
 
 //  écrire votre code sous ce commentaire
+shoppingList = (_array) => {
+    let comptOrange = 0;
+    let comptKiwi = 0;
+    let comptAnanas = 0;
+    let comptPrune = 0;
+    let comptBanane = 0;
+    let comptPamplemousse = 0;
+
+    for (let i = 0; i < _array.length; i++) {
+        for (let j = 0; j < _array.length; j++) {
+            switch (_array[i][j]) {
+                case "orange": comptOrange++; break;
+                case "kiwi": comptKiwi++; break;
+                case "ananas": comptAnanas++; break;
+                case "prune": comptPrune++; break;
+                case "banane": comptBanane++; break;
+                case "pamplemousse": comptPamplemousse++; break;
+            }
+        }
+    }
+    const fruits = {
+        "orange": comptOrange,
+        "kiwi": comptKiwi,
+        "ananas": comptAnanas,1
+        
+        "prune": comptPrune,
+        "banane": comptBanane,
+        "pamplemousse": comptPamplemousse
+    }
+    console.log(fruits);
+
+}
 
 /*
   Test 1

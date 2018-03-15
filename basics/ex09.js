@@ -6,7 +6,16 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+boostedEvenAddition = (_array) => {
+let u = 0;
+    _array.map(x => {
+    	console.log(x);
+        if (x%2 == 0) {
+            u = u + x;
+            console.log("valeur de u :", u);
+        }})
+	console.log(u);
+}
 /*
   Test 1
   Résultat attendu : 10

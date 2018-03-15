@@ -11,7 +11,15 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+getHumanTypeByAge = x => {
+    switch (true) {
+        case (x < 0): console.log("impossible... ou encore jamais vu ", x); break;
+        case ((x => 0)&&(x < 12)): console.log("enfant ", x); break;
+        case ((x => 12)&&(x < 18)): console.log("ado ", x); break;
+        case ((x => 18)&&(x < 124)): console.log("adulte ", x); break;
+        default: console.log("impossible... ou encore jamais vu ", x);
+    }
+}
 /*
   Test 1
   Résultat attendu : "impossible... ou encore jamais vu"

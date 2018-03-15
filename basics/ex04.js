@@ -8,7 +8,14 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+isEven = x => {
+    const test = x % 2;
+    console.log(test);
+    if ((x%2) != 0) {
+        return 1;
+    }
+    else return 0;
+}
 /*
   Test 1
   Résultat attendu : 1

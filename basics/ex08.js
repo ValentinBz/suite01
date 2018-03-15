@@ -14,7 +14,19 @@
 */
 
 //  écrire votre code sous ce commentaire
+isAllEven = (_array) => {
+let u = 0;
+    _array.map(x => {
+        if (x%2 == 0) {
+            u++;
+        }})
 
+    if (u == (_array.length)) {
+        return 1
+    } else {
+        return 0;
+    }
+}
 /*
   Test 1
   Résultat attendu : 0

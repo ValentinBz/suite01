@@ -15,7 +15,10 @@
   Test 1
   Résultat attendu : 65
 */
-
+countTotalTimeSpent = (_array) => {
+	const coucou =_array.reduce(function (acc, obj) { return acc + obj.time; }, 0)
+	console.log(coucou);
+}
 countTotalTimeSpent([{name: 'Homer', time: 15}, {name: 'Bart', time: 28}, {name: 'Lisa', time: 22}]);
 
 /* DO NOT TOUCH */

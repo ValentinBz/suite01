@@ -10,7 +10,15 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+filterEvenNumbers = (_array) => {
+  let array2 = [];
+  _array.filter(x => {
+    if ((x%2) == 0){
+      array2.push(x);
+    }
+  })
+  console.log(array2);
+}
 /*
   Test 1
   Résultat attendu : [2, 6, 8]

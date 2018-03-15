@@ -6,6 +6,11 @@
 */
 
 //  écrire votre code sous ce commentaire
+boostedAddition = (_array) => {
+	const reducer = (accumulator, currentValue) => accumulator + currentValue;
+	const coucou = _array.reduce(reducer, 0);
+	console.log(coucou);
+}
 
 /*
   Test 1

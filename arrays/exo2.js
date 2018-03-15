@@ -8,7 +8,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+editArrayAt = (_array, pos, val) => {
+  _array[pos] = val;
+  console.log(_array);
+}
 /*
   Test 1
   Résultat attendu : ["bonjour", "ça", 5]

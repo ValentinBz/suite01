@@ -11,7 +11,9 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+getCharAt = (str, num) => {
+    console.log(str[num]);
+}
 /*
   Test 1
   Résultat attendu : "j"

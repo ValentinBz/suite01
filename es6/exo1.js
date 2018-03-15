@@ -10,7 +10,13 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+getAllLastnames = (_array) => {
+  let array1 = [];
+    _array.map(x => {
+      array1.push(x.name);
+      })
+    console.log(array1);
+}
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]
