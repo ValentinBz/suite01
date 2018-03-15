@@ -17,31 +17,27 @@
 isAllEven = (_array) => {
 let u = 0;
     _array.map(x => {
+        console.log("kikou");
         if (x%2 == 0) {
             u++;
+        } else {
+            return 0;
         }})
 
     if (u == (_array.length)) {
         return 1
-    } else {
-        return 0;
     }
 }
-/*
-  Test 1
-  Résultat attendu : 0
+// isAllEven([4, 5, 6]);
+
+
+/*      Test 1
+    Appel à la fonction "isAllEven",
+    prenant en paramètre le tableau [4, 4, 6, 8, 10, 12],
+    et nous attendons comme résultat 1;
 */
 
-isAllEven([4, 5, 6]);
+// isAllEven([4, 4, 6, 8, 10, 12]);
+isAllEven([4, 4, 6, 8, 11, 12]);
+//  écrire votre code sous ce commentaire
 
-/*
-  Test 2
-  Résultat attendu : 1
-*/
-
-isAllEven([4, 4, 6, 8, 10, 12]);
-
-/* DO NOT TOUCH */
-module.exports = {
-  isAllEven: isAllEven
-}

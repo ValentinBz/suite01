@@ -35,7 +35,7 @@ shoppingList = (_array) => {
     const fruits = {
         "orange": comptOrange,
         "kiwi": comptKiwi,
-        "ananas": comptAnanas,1
+        "ananas": comptAnanas,
         
         "prune": comptPrune,
         "banane": comptBanane,

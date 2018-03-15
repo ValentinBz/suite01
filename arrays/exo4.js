@@ -11,9 +11,16 @@
 
 //  écrire votre code sous ce commentaire
 searchOcc = (arr, occ) => {
-    const fin = arr.map(x => x == occ);
-    console.log(fin);
+    let u = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == occ) {
+            u++;
+            console.log(i);
+        }
+    }
+    if (u == 0) {console.log(-1);}
 }
+
 /*
   Test 1
   Résultat attendu : 2
@@ -24,7 +31,10 @@ searchOcc(["Salut", "ça", "va", "?"], "va");
   Test 2
   Résultat attendu : -1
 */
+
 searchOcc(["Salut", "ça", "va", "?"], "Ahahahah");
+searchOcc(["Salut", "ça", "va", "?"], "ça");
+searchOcc(["Salut", "ça", "va", "?"], "?");
 
 /* DO NOT TOUCH */
 module.exports = {
